@@ -62,7 +62,7 @@ def train_neural_network(x):
                 y_batch = np.array(tr_label[i:i+100])
                 _, c= sess.run([optimizer,cost],feed_dict={x:x_batch,y:y_batch})
                 epoch_loss += c
-            print('Epoch: ' + str(epoch) + ' completed out of: ' + str(hm_epochs) + ' loss:' + str(epoch_loss))
+            print('Epoch: {} completed out of:  {} loss: {}'.format(epoch,hm_epochs,epoch_loss))
 
         correct = tf.equal(tf.argmax(prediction,1),tf.argmax(y,1))
         accuracy = tf.reduce_mean(tf.cast(correct,'float'))
