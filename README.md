@@ -15,5 +15,3 @@
 ##### Misc
 
 `neuralNetwork.py` has a deep neural net implementation for spam filter. 
-
-Naive Bayes Implementation in Tensorflow Coming soon.
